@@ -10,7 +10,7 @@ def Insert(root,x):
     if root == None:
         return Tree(x)
     if root.data > x:
-        root.l_Child = Insert(root.l_child,x)
+        root.l_child = Insert(root.l_child,x)
     else:
         root.r_child = Insert(root.r_child,x)
     return root
